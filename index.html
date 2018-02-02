@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Laura Wright Lesson 3</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Web Application Development</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#topic1">Version Control Systems</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">What is GIT?</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">GIT Basics</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">Starting with GIT</a>
+                    </li>
+                    <li>
+                        <a href="#topic5">GIT Commands </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h2 style="font-size:3em; padding:5px">Lesson 3 Highlights</h2>
+                <h3 style="color:white; font-family:alana; font-size:3em;">
+                    
+                </style>Laura Wright</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="topic1">
+            <img class="featurette-image img-square img-responsive pull-right" src="Images3/dvcs.png" alt= distributed version control system>
+            <h2 class="featurette-heading" style="font-family:alana;"> &nbsp; Highlight #1
+           <p>&nbsp</p>
+                <span class="text-muted" style="font-family:arial; text-transform: uppercase; color:black;">Version Control Systems</span>
+            </h2>
+            <p class="lead">
+                <p>&nbsp</p>
+
+A version control system (VCS) is one that is used to record changes to files over time. There are three types of version control systems.
+
+ <p>&nbsp</p>
+
+<ul> <li><b>Local- </b> The system is all in one place locally, usually on a type of database. This could work for individuals and small projects, but if there are a group of workers and a large amount of files, this system is not very effective. </li>
+
+ <p>&nbsp</p>
+
+<li><b>Central-</b> There is one central repository on a server that contains all of the revisions to files that a group of workers have made. This works well to a certain extent, but issues can arise when people are working simultaneously on a file, if the server goes down then no one can complete any work, someone may accidentally modify someone elses work, an internet connection is needed in order to work, and it can be time consuming with the need to go to the server for all of the files. 
+</li>
+
+ <p>&nbsp</p>
+
+<li><b>Distributed-</b> Is both local and centralized. Each individual in a group gets a mirror of a central repository on their own machine. This eliminates the issues that arise from a centralized version control system. </li>
+
+ <p>&nbsp</p>
+
+</ul>	<br>
+<b>Benefits of a distributed VCS</b> <br>
+
+ <p>&nbsp</p>
+
+<ul><li> Everyone has a complete copy of the remote repository on their own computer.</li>
+<li>Individuals work locally so no internet connection needed.</li>
+<li>There is no single point of failure, because everyone has a copy of the entire repository on their own machine.</li>
+<li>Everything goes faster because you don’t need to keep going back to a remote server for all of the files. No one can accidentally overwrite anything because there are measures in place to avoid this.</li>
+ <li>There is a history of all of the changes that have been made to a file by multiple users.</li>
+<li>The system facilitates collaborative changes.</li>
+<li>It can be used by workers in all industries - developers, designers, business individuals.</li>
+<li>It is simple, easy, fast, and ideal for large groups. </ul>
+
+</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="topic2">
+            <img class="featurette-image img-square img-responsive pull-left" src="Images3/pullpush.png" alt="pushing and pulling files in GIT">
+            <h2 class="featurette-heading"style="font-family:alana; text-align:center;">&nbsp; Highlight #2 <p>&nbsp</p>
+                <span class="text-muted" style="font-family:arial;text-transform: uppercase; color:black;">What is GIT?</span>
+            </h2>
+            <p class="lead"><p>&nbsp</p>
+
+GIT is one of the most popular types of distributed version control systems, it is free and open source, and is known for its ease of use, speed and modernity. This system is used by large companies such as Google, Facebook, Twitter and Netflix. 
+
+<p>&nbsp</p>
+
+GIT consists of one remote and one or more local repositories. The remote repository is an outside server that everyone is connected to. The local repository is a mirror of this remote repository on a worker’s own machine. Individuals take a file from the remote repository, modify it, and then send it back. This is called 'pulling' a file from the remote repository and then 'pushing' it back once it is modified. GIT records the who, what, why and when of this activity. Merges then take place through a series of careful steps. All of these actions are automatically backed up and anyone can revert to former versions at any time. 
+
+<p>&nbsp</p>
+
+There are measures made in GIT that make it difficult for anything to become lost or severely messed up. Every change that is made to a file is recorded with a check-sum. This ensures that nothing accidental can happen. An SHA-1 hash numbering system is used, which gives each committed change of a file a 40 hexadecimal character (0-9 and a-f). In general, most commands on GIT add data, and so the possibility of accidentally deleting something is very rare.
+
+
+
+</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="topic3">
+            <img class="featurette-image img-square img-responsive pull-right" src="Images3/fileplace.png" alt="working, staging, respository areas">
+            <h2 class="featurette-heading" style="font-family:alana;">&nbsp;Highlight #3 <p>&nbsp</p>
+                <span class="text-muted" style="font-family:arial;text-transform: uppercase; color:black;">GIT Basics</span>
+            </h2>
+            <p class="lead"><p>&nbsp</p>
+
+In a local repository, there are three sections of GIT that files are contained in.
+<p>&nbsp</p>
+
+<ul><li><b>Working tree</b> - where the modifying of a file takes place, a single checkout of one version of a file.</li>
+<li><b>Staging area</b> - a file or index that shows what file modifications are set up to be saved permanently.</li>
+<li><b>Repository</b> - where the saved files and metadata are stored.</li>
+</ul>
+
+<p>&nbsp</p>
+
+The GIT process begins with an individual working on a file in the working tree section. Once they are satisfied with the changes they have made, they will move it to the staging area. Here, they can double check their work, make any last minute changes, and then be ready to save the changes permanently. Once they are ready, they save the changes in the local repository.
+
+<p>&nbsp</p>
+
+In order to take these steps, GIT uses simple commands that are typed into the terminal section of their program. Each command begins with a $ sign. The most commonly used commands are - 
+
+<p>&nbsp</p>
+
+<ul><li><b>$ git add</b> - adds modified and new files to the staging area</li>
+<li><b>$ git commit</b> - modified or new files are permanently saved to the local repository</li>
+<li><b>$ git push</b> - files are pushed over to the remote repository to be saved there </li>
+<li><b>$ git status</b> - shows all the files that were modified since the last back up, and which ones are in the staging area</li>
+</ul>
+
+
+
+
+
+</p>
+        </div>
+        
+        <hr class="featurette-divider">
+        
+       <!-- Fourth Featurette -->
+        <div class="featurette" id="topic4">
+            <img class="featurette-image img-square img-responsive pull-left" src="Images3/basicgit.png" alt="basic GIT commands">
+            <h2 class="featurette-heading" style="font-family:alana;">Highlight #4 <p>&nbsp</p>
+                <span class="text-muted" style="font-family:arial; text-transform: uppercase; color:black;">Starting with GIT</span>
+            </h2>
+            <p class="lead"> <p>&nbsp</p>
+            
+            The first step that is taken when working with GIT for the first time, is to set up a repository. An individual can either create their own or clone an existing one.
+            
+            <p>&nbsp</p>
+
+<b>Setting up your own repository </b>
+
+   <p>&nbsp</p>
+
+<ol> <li>Go to the directory on your computer that stores the files that you want to put into the repository. For example, on a Mac it will be   found at -  cd/users/User/my_project.</li>
+<li>Type <b>$ git init</b> into the terminal. This will create a subdirectory ending in .git.</li>
+<li>Add the files and commit them using <b> $ git add</b> and <b> $ git commit -m.</b></li>
+</ol>
+
+<p>&nbsp</p>
+
+<b>Cloning an existing repository </b>
+
+<p>&nbsp</p>
+
+<ol><li>Get the URL of the directory you want to clone.</li>
+<li>Type in <b>$ git clone &lt;url&gt;. </b></li>
+<li>Your directory will be given the same name as the cloned directory. If you want to rename it, type the new name next to it in an additional command.<b> $ git clone &lt;url&gt; new name</b></li>
+</ol>
+
+<p>&nbsp</p>
+<b>Beginning a new project </b>
+
+<p>&nbsp</p>
+
+
+
+<p>&nbsp</p>
+
+<ol><li><b>$ git init myproject</b> - This command will start a new project’s control structures</li>
+
+<p>&nbsp</p>
+
+<li><b>Cd myproject</b> - This reply shows that a new folder has been created that will be used to store all of the files of the new project.</li>
+
+<p>&nbsp</p>
+
+<li><b>$ git add .</b>  - When starting a new project, all unseen (untracked) files need to become visible to GIT. This command will make them visible (tracked). Once the files are added and recognized by GIT, they are put into the holding zone. Here they can be modified if needed, before being saved.</li>
+
+<p>&nbsp</p>
+
+<li><b>$ git commit -m</b> - After the files have been double checked and saved, a unique historical version of each file, along with the metadata for that file, will be created.</li>
+</ol>
+
+</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Fifth Featurette -->
+        <div class="featurette" id="topic5">
+            <img class="featurette-image img-square img-responsive pull-right" src="Images3/gitcommands.png"alt="GIT commands">
+            <h2 class="featurette-heading" style="font-family:alana;">Highlight #5 <p>&nbsp</p>
+                <span class="text-muted" style="font-family:arial; text-transform: uppercase; color:black;">GIT commands</span>
+            </h2>
+            <p class="lead"><p>&nbsp</p>
+            
+
+The following is a comprehensive list of commands that are commonly used in GIT:
+
+<p>&nbsp</p>
+
+<ul>
+    <li><b>$ git init </b> - used to set up a personal workspace and open a new repository. One can be created new or cloned from an existing repository. </li>
+    
+<li><b>$ git clone </b>- clones a remote repository into a local repository</li>
+
+<li><b>$ git remote and origin</b> - sets up a remote repository and calls it 'origin'</li>
+
+<li><b>$ git add</b> - gets all the files that have been changed since the last commit and puts them into the staging area</li>
+
+<li><b>$ git commit -m</b> - permanently saves files to a local repository</li>
+
+<li><b>$ git push </b>- pushes files to a remote repository</li>
+
+<li><b>$ git pull</b> - pulls changes from a remote repository into a local repository</li>
+
+<li><b>$ git log </b>- shows all of the backups in a repository</li>
+
+<li><b>$ git status</b> - shows all of the files that were modified since the last back up and which ones are in the staging area. It also looks for modified tracked or untracked files. In addition, this command also states what branch an individual is on (the default branch is master/origin which is the main branch at the remote repository).</li>
+
+<li><b>$ git blame_</b> - who wrote a particular line of code</li>
+
+<li><b>$ git diff </b>- shows the difference between a working file and the backups of that file in a repository</li>
+
+<li><b>$ git checkout </b>- switching to a different version of a file</li>
+
+<li><b>$ git merge</b> - after multiple individuals have completed their work on a common project, it is individually merged with the primary copy. Before finalizing the merge, there are options that enable a worker to keep or reject another worker’s changes if they conflict</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2018</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
