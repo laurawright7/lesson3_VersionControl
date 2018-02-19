@@ -12,7 +12,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background: url(Images3/gitlogo.png) no-repeat center center scroll;
+    background: url('../Images3/vcshead.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -52,7 +52,7 @@ body {
 }
 
 .featurette-heading {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 footer {
